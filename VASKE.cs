@@ -435,7 +435,7 @@ namespace St0rmPasscode
 				Thread.Sleep(100);
 				using (Process process = new Process())
 				{
-					process.StartInfo.FileName = Environment.CurrentDirectory + "/HouseArrest/iproxy.exe";
+					process.StartInfo.FileName = Environment.CurrentDirectory + "/ref/PcDep/iproxy.exe";
 					process.StartInfo.Arguments = "22 44";
 					process.StartInfo.UseShellExecute = false;
 					process.StartInfo.RedirectStandardOutput = true;
