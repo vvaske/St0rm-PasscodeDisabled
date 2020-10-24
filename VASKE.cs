@@ -367,13 +367,13 @@ namespace St0rmPasscode
 			this.checkedd = true;
 		}
 
-		public string Exec(string Command)
+		public string Exec(string comand)
 		{
 			if (!sshClient.IsConnected)
 			{
 				sshClient.Connect();
 			}
-			SshCommand sshCommand = sshClient.CreateCommand(Command);
+			SshCommand sshCommand = sshClient.CreateCommand(comand);
 			IAsyncResult asyncResult = sshCommand.BeginExecute();
 			string result;
 			try
@@ -389,13 +389,13 @@ namespace St0rmPasscode
 			return result;
 		}
 
-		public string Exec2(string Comando)
+		public string Exec2(string comand)
 		{
 			if (!sshClient.IsConnected)
 			{
 				sshClient.Connect();
 			}
-			SshCommand sshCommand = VASKE.sshClient.CreateCommand(Comando);
+			SshCommand sshCommand = VASKE.sshClient.CreateCommand(comand);
 			string result;
 			try
 			{
