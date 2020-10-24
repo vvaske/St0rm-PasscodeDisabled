@@ -11,3 +11,5 @@ Passcode/Disabled tool by st0rm team free to use :)
  Quamotion: libimobiledevice
 
  MobileDevice lib by nivalxer (https://github.com/nivalxer/MobileDevice)
+ 
+ # passcode disabled method with "FairPlay" folder.
