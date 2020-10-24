@@ -1,6 +1,8 @@
 # St0rm-PasscodeDisabled
 Passcode/Disabled tool by st0rm team free to use :)
 
+### THIS TOOL IS LICENSED UNDER GPLv3
+
 ## Special thanks to:
  Checkra1n Team
  
