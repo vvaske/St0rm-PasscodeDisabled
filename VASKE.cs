@@ -188,11 +188,11 @@ namespace St0rmPasscode
 
 			this.BackgroundWorker1 = new BackgroundWorker();
 			this.BackgroundWorker1.DoWork += this.Backup;
-			this.BackgroundWorker1.RunWorkerCompleted += this.Finished;
+			this.BackgroundWorker1.RunWorkerCompleted += this.FinishedBack;
 
 			this.BackgroundWorker2 = new BackgroundWorker();
 			this.BackgroundWorker2.DoWork += this.Restore;
-			this.BackgroundWorker2.RunWorkerCompleted += this.Finished;
+			this.BackgroundWorker2.RunWorkerCompleted += this.FinishedRest;
 
 			checker = new BackgroundWorker();
 			checker.DoWork += iDevice_Check;
@@ -845,5 +845,51 @@ namespace St0rmPasscode
 			}
 		}
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+			this.BackgroundWorker1.RunWorkerAsync();
+		}
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+			this.BackgroundWorker2.RunWorkerAsync();
+		}
+
+		private void FinishedBack(object sender, RunWorkerCompletedEventArgs e)
+		{
+			if (e.Cancelled)
+			{
+				this.lblCheckme.Text = "Passcode Canceled";
+				this.button1.Enabled = true;
+				return;
+			}
+			if (e.Error != null)
+			{
+				MessageBox.Show(e.Error.ToString(), "[ERROR]", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+				this.button1.Enabled = true;
+				return;
+			}
+			this.lblCheckme.Text = "Backup Done!";
+			this.button1.Enabled = true;
+		}
+
+
+		private void FinishedRest(object sender, RunWorkerCompletedEventArgs e)
+		{
+			if (e.Cancelled)
+			{
+				this.lblCheckme.Text = "Passcode Canceled";
+				this.button2.Enabled = true;
+				return;
+			}
+			if (e.Error != null)
+			{
+				MessageBox.Show(e.Error.ToString(), "[ERROR]", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+				this.button2.Enabled = true;
+				return;
+			}
+			this.lblCheckme.Text = "Restore Done, Activated!";
+			this.button2.Enabled = true;
+		}
 	}
 }
