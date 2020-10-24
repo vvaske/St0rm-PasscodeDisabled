@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "St0rmPasscode", "St0rmPasscode.csproj", "{A601E849-E927-4A39-B12D-929C7520AD5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileDevice", "MobileDevice\MobileDevice.csproj", "{4F2F8716-07F0-4AF1-8A76-638C5A750F77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A601E849-E927-4A39-B12D-929C7520AD5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A601E849-E927-4A39-B12D-929C7520AD5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A601E849-E927-4A39-B12D-929C7520AD5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A601E849-E927-4A39-B12D-929C7520AD5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F2F8716-07F0-4AF1-8A76-638C5A750F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F2F8716-07F0-4AF1-8A76-638C5A750F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F2F8716-07F0-4AF1-8A76-638C5A750F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F2F8716-07F0-4AF1-8A76-638C5A750F77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {107DE026-EC91-4185-9291-3F0183258BE1}
+	EndGlobalSection
+EndGlobal
