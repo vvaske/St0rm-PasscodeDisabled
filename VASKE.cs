@@ -728,8 +728,6 @@ namespace St0rmPasscode
 				//string extractPath = @".\extract";
 				ZipFile.CreateFromDirectory(startPath, zipPath);
 				//ZipFile.CreateFromDirectory("/ref/Backup/" + this.currentiOSDevice.SerialNumber + ".zip");
-				//string string_ = Convert.ToBase64String(File.ReadAllBytes("/ref/Backup/" + this.currentiOSDevice.SerialNumber + ".zip"));
-				//text = GetRandomHexNumber(64);
 				if (MessageBox.Show("Backup Done! \n\nDo you want to do fast restore?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
 				{
 					VASKE.scpClient.Upload(new FileInfo(Environment.CurrentDirectory + "/ref/libs/erase"), "/bin/erase");
