@@ -7,3 +7,5 @@ Passcode/Disabled tool by st0rm team free to use :)
  Minacriss: Minaeraser binary (named restore in the tool) for erasing the device.
  
  Quamotion: libimobiledevice
+
+ MobileDevice lib by nivalxer (https://github.com/nivalxer/MobileDevice)
